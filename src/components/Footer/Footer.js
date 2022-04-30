@@ -79,11 +79,6 @@ const Footer = () => {
               </li>
               <li className="nav-item mb-2">
                 <a href="/" className="nav-link p-0 text-muted">
-                  Features
-                </a>
-              </li>
-              <li className="nav-item mb-2">
-                <a href="/" className="nav-link p-0 text-muted">
                   Pricing
                 </a>
               </li>
@@ -146,4 +141,3 @@ const Footer = () => {
 }
 
 export default Footer
-

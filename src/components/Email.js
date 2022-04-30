@@ -1,44 +1,46 @@
 import React from 'react'
-import styled from 'styled-components' 
+import styled from 'styled-components'
 import EmailBg from '../assets/Images/email.jpg'
 import { Button } from './Button'
 
 const Email = () => {
-  return (
+    return (
         <EmailContainer>
             <EmailContent>
-                <h1>Get Exclusive Rides</h1>
-                <p>Email us your trip details and get you cab booked instantly!!</p>
+                <h1>Exclusive Rides with SheCabs</h1>
+                <p>Email us your trip details or call us at 999999991!!</p>
                 <form action="#">
                     <FormWrap>
                         <label htmlFor="email">
-                        <input type= "email" placeholder='Enter your email'/>
+                            <input type="email" placeholder='Enter your email' />
                         </label>
-                        <Button  round="true" to="/ride">Book your ride</Button>
+                        <Button round="true" to="/ride">Book your ride</Button>
                     </FormWrap>
                 </form>
             </EmailContent>
         </EmailContainer>
-  )
+    )
 }
 
 export default Email
 
-const EmailContainer=styled.div`
+const EmailContainer = styled.div`
     background: linear-gradient(180deg,rgba(0,0,0,0.5) 35%, rgba(0,0,0,0.5) 0%,
     rgba(0,0,0,0.1) 100%),
     url(${EmailBg}) no-repeat center;
     background-size:cover;
-    height:450px;
+    height: 450px;
     width:100%;
     padding: 5rem calc((100vw-1300px)/2);
-    color:#fff;
+    color:#fff; 
     display:flex;
+    margin-bottom: 0 2rem;
     justify-content:center;
     align-items: center;
+
     `
 
-const EmailContent=styled.div`
+const EmailContent = styled.div`
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -58,8 +60,9 @@ const EmailContent=styled.div`
         z-index: 1;
         
     }
+
 `
-const FormWrap=styled.div`
+const FormWrap = styled.div`
 input{
     pading: 1rem 1.5rem;
     outline: none;

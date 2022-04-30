@@ -1,72 +1,49 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Button } from "../Button"
-import Video from "../../assets/Videos/Video.mp4"
+import herobg from "../../assets/Images/herobg.jpg"
 
 
 const Hero = () => {
   return (
-        <HeroContainer>
-            <HeroBg>
-            <VideoBg  src = {Video} type="video/mp4" autoPlay loop muted playsInLine />
-            </HeroBg>
-            <HeroContent>
-                <HeroItems>
-                    <HeroH1>Safe and Reliable</HeroH1>
-                        <HeroP>Book your first ride with us</HeroP>
-                        <NavBtn>
-                         <Button primary="true"  round="true" to="/ride">
-                                Ride Now
-                            </Button>
-                        </NavBtn> 
-                        </HeroItems> 
-            </HeroContent>
-        </HeroContainer>
-    
+    <HeroContainer>
+            
+    <HeroContent>
+        <HeroItems>
+            <HeroH1> Safe and Reliable</HeroH1>
+            <HeroB>SheCabs</HeroB>
+                <HeroP>We will take you anywhere</HeroP>
+                <NavBtn>
+                 <Button primary="true"  round="true" Link to="/Ride">
+                        Ride Now
+                    </Button>
+                </NavBtn> 
+                </HeroItems> 
+    </HeroContent>
+</HeroContainer>
+
   )
 }
 
 export default Hero
  
 const HeroContainer = styled.div`
-    background: #013220;
+    background: linear-gradient(180deg,rgba(0,0,0,0.5) 35%, rgba(0,0,0,0.5) 0%,
+    rgba(0,0,0,0.1) 100%),
+    url(${herobg} ) no-repeat center;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding: 0 1rem;
-    position: relative;
-    margin-top: -80px;
-    color: #fff;
-    :before {
-        content:"";
-        position:absolute;
-        top:0;
-        bottom:0;
-        right:0;
-        left:0;
-        z-index: 2;
-        background: Linear-gradient(180deg, rgba(0,0,0,0.2) 0%,
-         rgba(0,0,0,0.6) 100% ),
-        Linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100% );
-    }
- `
-const HeroBg= styled.div`
-    position:absolute;
-    top:0;
-    bottom:0;
-    right:0;
-    left:0;
+    background-size:cover;
+    height:100vh;
     width:100%;
-    height:100%;
-    overflow:hidden;
-`
+    padding:0 1rem;
+    margin-top: -80px;
+    color:#000;
+    position: relative;
+    display:flex;
+    justify-content:center;
+    align-items: center;
 
-const VideoBg= styled.video`
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
 `
 
 const  HeroContent = styled.div `
@@ -88,19 +65,26 @@ const HeroItems= styled.div `
     color: #fff;
     line-height: 1.1; 
     font-weight: bold;
+
 `
 
 const HeroH1= styled.h1 `
     font-size: clamp(1.5rem, 6vw, 4rem);
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    margin-left: 4rem;
     letter-spacing: 3px;
     padding: 0 1rem;
     `
 
 const HeroP= styled.p`
-    font-size: clamp(1rem, 3vw, 2rem);
-    margin-bottom: 2rem;
+    font-size: 1.85rem;
+    margin-bottom: 3rem;
     font-weight: 400;
+    `
+    const HeroB= styled.p`
+    font-size: clamp(1.25rem, 4vw, 3rem);
+    margin-bottom: 0.75rem;
+    font-weight: 500;
     `
  const NavBtn = styled.div`
     display: flex;
@@ -110,3 +94,7 @@ const HeroP= styled.p`
     display: none;
     }
     `
+  
+
+
+

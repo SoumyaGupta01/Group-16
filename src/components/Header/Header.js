@@ -21,7 +21,7 @@ const Header = () => {
             }
             </NavMenu >
             <NavBtn>
-              <Button primary="true"  round="true" to="/ride"> Book Your Ride </Button>
+              <Button primary="true"  round="true" Link to="/Ride"> Book Your Ride </Button>
             </NavBtn>
       </Nav>
     )
@@ -29,7 +29,7 @@ const Header = () => {
 }
 export default Header
 const Nav = styled.nav`
-  background: transparent;
+  background: #000;
   height: 80px;
   display: flex;
   justify-content: space-between;

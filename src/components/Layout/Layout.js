@@ -1,23 +1,16 @@
 import React from "react"
-import PropTypes from "prop-types"
-import Header from "../Header/Header"
 import Footer from "../Footer/Footer"
-import "../../styles/custom-style.scss"
+import Header from "../Header/Header"
 import { GlobalStyle } from "../../styles/GlobalStyle"
 
 const Layout = ({ children }) => {
   return (
-    <div className="container-fluid p-0">
-      <Header />
-      <GlobalStyle />
-      {children}
-      <Footer />
-    </div>
+    <>
+    <GlobalStyle/>
+    <Header />
+      <main>{children}</main>  
+      <Footer/> 
+  </>
   )
 }
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
-
 export default Layout

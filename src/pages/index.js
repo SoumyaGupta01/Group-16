@@ -1,18 +1,18 @@
 import React from "react"
-import Hero from "../components/Hero/Hero"
 import Layout from "../components/Layout/Layout"
+import Hero from "../components/Hero/Hero"
 import Reviews from "../components/Reviews"
 import Email from "../components/Email"
-
-const Index = () => {
-  return (
-    <Layout>
-    <Hero/>
+import Knowus from "../components/Knowus"
+import Stat from "../components/Stat"
+const IndexPage = () => (
+   <Layout>
+    <Hero />
     <Reviews/>
+    <Knowus/>
+     <Stat/>
     <Email/>
-    </Layout>
-  )
-  return (<div>Hello world!</div>)
-}
+   </Layout>
+)
 
-export default Index
+export default IndexPage
