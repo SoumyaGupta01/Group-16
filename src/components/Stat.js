@@ -4,7 +4,7 @@ import { BsPersonCheckFill } from 'react-icons/bs';
 import { BsAward } from 'react-icons/bs';
 import { BsEmojiLaughing } from 'react-icons/bs';
 import { BsBullseye } from 'react-icons/bs';
-import StatBg from '../assets/Images/stat.jpeg';
+import StatBg from '../assets/Images/stat.jpg';
 
 
 
